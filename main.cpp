@@ -1,4 +1,5 @@
 #include <iostream>
+#include <list>
 #include <map>
 #include <memory>
 #include <string>
@@ -59,7 +60,7 @@ class JSON_Node {
         type=Type::NUMBER;
     }
     void setBool(bool bValue) {
-        this->value.list=l;
+        this->value.list=std::list<>;
         type=Type::BOOLEAN;
     }
 };
