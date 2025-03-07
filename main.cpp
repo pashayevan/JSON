@@ -1,7 +1,10 @@
 #include <iostream>
-#include <list>
-#include <map>
-#include <memory>
 #include <string>
-#include <vector>
 
+#include "parser.h"
+
+int main(int argc, char* argv[]) {
+    std::string filename=argv[1];
+    JSONParser parser(filename);
+    parser.parse();
+}
